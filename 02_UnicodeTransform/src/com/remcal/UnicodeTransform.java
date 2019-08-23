@@ -21,10 +21,10 @@ public class UnicodeTransform{
 
 	//unicode to chinese
 	private static String unicodeToCn(String unicode) {
-	    /** ÒÔ \ u ·Ö¸î£¬ÒòÎªjava×¢ÊÍÒ²ÄÜÊ¶±ğunicode£¬Òò´ËÖĞ¼ä¼ÓÁËÒ»¸ö¿Õ¸ñ*/
+	    /** ä»¥ \ u åˆ†å‰²ï¼Œå› ä¸ºjavaæ³¨é‡Šä¹Ÿèƒ½è¯†åˆ«unicodeï¼Œå› æ­¤ä¸­é—´åŠ äº†ä¸€ä¸ªç©ºæ ¼*/
 	    String[] strs = unicode.split("\\\\u");
 	    String returnStr = "";
-	    // ÓÉÓÚunicode×Ö·û´®ÒÔ \ u ¿ªÍ·£¬Òò´Ë·Ö¸î³öµÄµÚÒ»¸ö×Ö·ûÊÇ""¡£
+	    // ç”±äºunicodeå­—ç¬¦ä¸²ä»¥ \ u å¼€å¤´ï¼Œå› æ­¤åˆ†å‰²å‡ºçš„ç¬¬ä¸€ä¸ªå­—ç¬¦æ˜¯""ã€‚
 	    for (int i = 1; i < strs.length; i++) {
 	      returnStr += (char) Integer.valueOf(strs[i], 16).intValue();
 	    }
