@@ -12,12 +12,12 @@ public class SystemRuntimeDemo {
 
 	public static void main(String[] args) {
 
-		System.out.println("Ïò¿ØÖÆÌ¨Êä³ö");
-		System.err.println("³ö´íÀ²");
+		System.out.println("å‘æ§åˆ¶å°è¾“å‡º");
+		System.err.println("å‡ºé”™å•¦");
 		
 		int[] num1 = {1,2,3,4,5,6,7,8};
 		int[] num2 = new int[num1.length];
-		//²ÎÊı£¨Ô´Êı×é£¬Ô´Êı×éµÄÆğÊ¼Î»ÖÃ £¬Ä¿±êÊı×é£¬Ä¿±êÊı×éµÄÆğÊ¼Î»ÖÃ £¬³¤¶È£©
+		//å‚æ•°ï¼ˆæºæ•°ç»„ï¼Œæºæ•°ç»„çš„èµ·å§‹ä½ç½® ï¼Œç›®æ ‡æ•°ç»„ï¼Œç›®æ ‡æ•°ç»„çš„èµ·å§‹ä½ç½® ï¼Œé•¿åº¦ï¼‰
 		System.arraycopy(num1, 0, num2, 0, num1.length);
 		System.out.println(Arrays.toString(num2));
 		
@@ -27,27 +27,27 @@ public class SystemRuntimeDemo {
 		DateFormat df = new SimpleDateFormat("HH:mm:ss");
 		String now = df.format(nowDate);
 		System.out.println(now);
-		//ÍË³öJVM
-		//System.exit(0)£»
+		//é€€å‡ºJVM
+		//System.exit(0)ï¼›
 		
 		System.out.println(System.getProperty("java.version"));
 		System.out.println(System.getProperty("java.home"));
 		System.out.println(System.getProperty("os.name"));
 		
 		Runtime rt = Runtime.getRuntime();
-		System.out.println("´¦ÀíÆ÷ÊıÁ¿£º" + rt.availableProcessors()+" ¸ö");
-		System.out.println("Jvm×ÜÄÚ´æÊı £º"+ rt.totalMemory()+" byte");
-		System.out.println("Jvm¿ÕÏĞÄÚ´æÊı£º "+ rt.freeMemory()+" byte");
-		System.out.println("Jvm¿ÉÓÃ×î´óÄÚ´æÊı£º "+ rt.maxMemory()+" byte");
+		System.out.println("å¤„ç†å™¨æ•°é‡ï¼š" + rt.availableProcessors()+" ä¸ª");
+		System.out.println("Jvmæ€»å†…å­˜æ•° ï¼š"+ rt.totalMemory()+" byte");
+		System.out.println("Jvmç©ºé—²å†…å­˜æ•°ï¼š "+ rt.freeMemory()+" byte");
+		System.out.println("Jvmå¯ç”¨æœ€å¤§å†…å­˜æ•°ï¼š "+ rt.maxMemory()+" byte");
 
-		//ÔÚµ¥¶ÀµÄ½ø³ÌÖĞÖ´ĞĞÖ¸¶¨µÄ×Ö·û´®ÃüÁî
+		//åœ¨å•ç‹¬çš„è¿›ç¨‹ä¸­æ‰§è¡ŒæŒ‡å®šçš„å­—ç¬¦ä¸²å‘½ä»¤
 		try {
-			rt.exec("notepad"); //´ò¿ª¼Ç±Ê±¾
+			rt.exec("notepad"); //æ‰“å¼€è®°ç¬”æœ¬
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//¼ÓÔØC¡¢C++±àĞ´µÄÀà¿â
+		//åŠ è½½Cã€C++ç¼–å†™çš„ç±»åº“
 		//System.loadLibrary(libname) 
 		
 	}
