@@ -11,7 +11,7 @@ public class HelloEclipse {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			System.out.println("hello eclipse!!!");//ÄãºÃ£¬Eclipse
+			System.out.println("hello eclipse!!!");//Hello£¬Eclipse
 	}
 
 }
